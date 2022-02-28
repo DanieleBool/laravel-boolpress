@@ -1,6 +1,6 @@
 <template>
     <header>
-        <!-- <ul v-if="!eAutenticato">
+                <!-- <ul v-if="!eAutenticato">
             <a href="admin/login">accedi</a>
             <a href="admin/register">registrati</a>
         </ul>
@@ -9,11 +9,13 @@
             <div class="">
                 <router-link class="" :to="{name: 'home'}">Boolpress</router-link>
                 <ul>
+                    <li><router-link :to="{name: 'home'}">Home</router-link></li>
                     <li><router-link :to="{name: 'about'}">Chi siamo</router-link></li>
+                    <li><router-link :to="{name: 'categories'}">Categorie</router-link></li>
                 </ul>
             </div>
             <div class="">
-                <a href="admin/home">Area riservata</a>
+                <a href="/admin/home">Area riservata</a>
             </div>
         </div>
     </header>
@@ -22,7 +24,7 @@
 <script>
 export default {
     name: "Header",
-    // computed:{
+        // computed:{
     //     eAutenticato: function(){
     //         return window.autenticato;
     //     }
@@ -30,5 +32,6 @@ export default {
 }
 </script>
 
-<style lang="scss scoped">
+<style lang="scss" scoped>
+
 </style>

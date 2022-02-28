@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="container">
-            <router-link :to="{name: 'about'}">Chi siamo</router-link>
+            <router-link :to="{name: 'about'}">Contatti</router-link>
             <a href="#">footer link</a>
             <a href="#">footer link</a>
             <a href="#">footer link</a>
@@ -16,5 +16,6 @@ export default {
 }
 </script>
 
-<style lang="scss scoped">
+<style lang="scss" scoped>
+
 </style>

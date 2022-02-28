@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
@@ -13,8 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <h5>Welcome {{ Auth::user()->name }}! 🥰</h5>
-                    {{-- {{ __('You are logged in!') }} --}}
+                    <h5>Benvenuto {{Auth::user()->name}}! 🥰</h5> 
                 </div>
             </div>
         </div>
